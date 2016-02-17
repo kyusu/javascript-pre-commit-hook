@@ -1,0 +1,5 @@
+#!/bin/sh
+echo
+powerShell="c:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -InputFormat None -Command "
+exec $powerShell '.\.git\hooks\pre-commit.ps1'
+exit
